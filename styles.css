@@ -181,7 +181,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .member-card .avatar img {
