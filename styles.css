@@ -880,13 +880,6 @@ nav ul li .dropdown-menu li a:hover {
     color: white; /* 悬停时字体颜色 */
 }
 
-/* 页面内容样式 */
-.container {
-    max-width: 1200px;
-    margin: 2rem auto; /* 中间对齐 */
-    padding: 0 1rem; /* 水平内边距 */
-}
-
 .page-content {
     margin-top: 20px;
 }
@@ -898,159 +891,14 @@ footer {
     padding: 1rem;
     margin-top: 3rem;
 }
-
-
-/* 页面内容样式 */
-.container {
-    max-width: 1200px;
-    margin: 2rem auto; /* 中间对齐 */
-    padding: 0 1rem; /* 水平内边距 */
-}
-
-.page-content {
-    margin-top: 20px;
-}
-
-footer {
-    background: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 3rem;
-}
-
- /* 通用设置 */
- .container {
-     max-width: 1200px;
-     margin: auto;
-     padding: 20px;
- }
-
- .committee-section {
-     margin-bottom: 40px;
- }
-
- .section-header {
-     font-size: 24px;
-     color: #333;
-     margin-bottom: 20px;
- }
 
 /* Organizer Grid */
 .organizer-grid, .expert-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 响应式布局 */
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
 }
 
-/* Organizer Card */
-.organizer-card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background: #fff;
-    padding: 20px;
-    text-align: center; /* 内容居中对齐 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-}
-
-/* Card Hover Effect */
-.organizer-card:hover {
-    transform: scale(1.03); /* 鼠标悬停时稍微放大 */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Avatar */
-.avatar img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover; /* 保证图片适配圆形头像 */
-    margin-bottom: 15px; /* 图片与姓名/信息间距 */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-/* Organizer Info */
-.organizer-info {
-    text-align: center; /* 信息居中 */
-}
-
-.organizer-info h3 {
-    font-size: 18px;
-    color: #333;
-    margin: 0;
-}
-
-.organizer-info p {
-    font-size: 14px;
-    color: #555;
-    margin: 5px 0;
-}
-
-.organizer-info .research-area {
-    font-style: italic;
-    color: #666;
-    margin-top: 10px;
-}
-
-/* Details List */
-.details-list {
-    list-style: none; /* 去掉默认的列表样式 */
-    padding: 0;
-    margin: 10px 0;
-}
-
-.details-list li {
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #555;
-}
-
-.details-list i {
-    margin-right: 8px; /* 图标与文字间距 */
-    color: #007bfc; /* 图标颜色 */
-}
-
-/* Profile Link */
-.profile-link {
-    display: inline-block;
-    margin-top: 10px;
-    font-size: 14px;
-    color: #007bfc;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.profile-link i {
-    margin-left: 5px;
-    transition: transform 0.3s;
-}
-
-/* Hover Effect */
-.profile-link:hover {
-    text-decoration: underline;
-}
-
-.profile-link:hover i {
-    transform: translateX(3px); /* 向右移动图标 */
-}
-
- /* 通用设置 */
- .container {
-     max-width: 1200px;
-     margin: auto;
-     padding: 20px;
- }
-
- .committee-section {
-     margin-bottom: 40px;
- }
-
- .section-header {
-     font-size: 24px;
-     color: #333;
-     margin-bottom: 20px;
- }
 /* Acknowledgments Section Styling */
 .acknowledgments-grid {
     display: grid;
@@ -1070,14 +918,6 @@ footer {
     font-size: 16px;
     color: #333;
     transition: transform 0.3s, box-shadow 0.3s;
-}
-/* 卡片样式 */
-.highlight-card {
-    background: white;
-    padding: 2rem; /* 内边距 */
-    border-radius: 8px; /* 圆角 */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 阴影 */
-    margin-bottom: 2rem; /* 底部间距 */
 }
 
 /* 标题样式 */
@@ -1101,22 +941,7 @@ footer {
 .related-topics ul li ul {
     padding-left: 20px; /* 嵌套列表的左侧内边距 */
 }
-<style>
-    .dropdown > a {
-        position: relative; /* 使伪元素的定位相对于父元素 */
-    }
 
-    .dropdown > a::after {
-        content: '';
-        position: absolute;
-        top: 50%; /* 垂直居中 */
-        right: 5px; /* 与右边缘的距离 */
-        transform: translateY(-30%) rotate(270deg); /* 將三角形旋轉90度，使其看起来像一个指示标志 */
-        border: solid transparent; /* 透明边框 */
-        border-width: 5px 5px 5px 0; /* 定义三角形的大小和方向 */
-        border-right-color: #ffffff; /* 三角形颜色，白色，可以根据需要更改 */
-    }
-</style>
 
 
 
