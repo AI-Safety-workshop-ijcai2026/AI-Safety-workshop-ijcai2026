@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workshop Challenge | IJCAI 2025</title>
+    <title>AI-Safety-workshop-ijcai2026</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,7 +20,7 @@
         </li>
         <li><a href="Registration.html">Registration</a></li>
         <li><a href="organizers.html">Organizers</a></li>
-        <li class="active"><a href="accepted_paper.html">Accepted Papers</a></li>
+<!--        <li class="active"><a href="accepted_paper.html">Accepted Papers</a></li>-->
     </ul>
 </nav>
 
@@ -28,12 +28,9 @@
     <div class="page-content">
         <div class="card committee-section">
             <h2 class="section-header"><b>Challenge Significance</b></h2>
-            <p>As deepfake technology advances rapidly, fake images and audio-visual content threaten social security and media credibility. The Deepfake Detection and Localization Challenge (DDL Challenge) aims to:</p>
-            <ul>
-                <li>Enhance detection interpretability by providing intuitive evidence through temporal-spatial localization (e.g., pixel-level tampered areas, forged timestamps).</li>
-                <li>Address multi-modal risks by tackling complex attacks such as "forged audio + authentic video," filling the existing technical gaps.</li>
-                <li>Promote technology inclusivity by providing access to the world's largest multi-modal deepfake dataset (1.8M+ samples), which encompasses 88 forgery techniques.</li>
-            </ul>
+            <p>With the rapid advancement of AI-Generated Content (AIGC) technologies, their powerful generative capabilities across text, image, audio, and video modalities have driven widespread adoption in content creation and information dissemination.</p>
+            <p>However, malicious content such as deepfakes, misinformation, and voice impersonation are increasingly prevalent, posing serious threats to social trust and public safety. Current research on AIGC safety predominantly centers on single modalities or specific tasks, and the lack of coordination between model-level attack-defense and content-level detection hampers the construction of a systematic security framework that spans the entire life cycle.</p>
+            <p>Therefore, we propose the workshop on <b>"DDL 2.0: AIGC Safety from Dual Perspectives of Model and Content"</b>. This workshop is a continuation and expansion of our successfully held IJCAI 2025 workshop, "DDL1.0: Deepfake Detection, Localization, and Interpretability". Aligned with IJCAI-ECAI's mission of "AI for Good", this workshop is carefully designed to advance the AI safety community, with particular emphasis on building a comprehensive, collaborative, and sustainable governance framework for AIGC safety.</p>
         </div>
 
         <div class="card committee-section">
@@ -62,22 +59,18 @@
 
         <div class="card committee-section">
             <h2 class="section-header"><b>Challenge Content</b></h2>
-            <p>This challenge consists of two tracks focusing on detection and localization of deepfake artifacts:</p>
-            <h3>Track 1: Image Detection and Localization (DDL-I)</h3>
-            <ul>
-                <li>Tasks: Real/Fake Classification (Cla) + Spatial Localization (SL).</li>
-                <li>Dataset: Over 1.5 million images covering 61 manipulation techniques, including single-face and multi-face tampering scenarios.</li>
-                <li>Evaluation Metrics: Area Under the ROC Curve (AUC) for detection, F1 Score, and Intersection over Union (IoU) for spatial localization (calculated exclusively for fake samples).</li>
-                <center><img src="images/f1_score.png" style="width: 500px; height: auto;"></center>
-            </ul>
-
-            <h3>Track 2: Audio-Visual Detection and Localization (DDL-AV)</h3>
-            <ul>
-                <li>Tasks: Real/Fake Classification (Cla) + Temporal Localization (TL).</li>
-                <li>Dataset: 300,000+ samples integrating 9 audio manipulation methods and 18 video forgery techniques.</li>
-                <li>Evaluation Metrics: Area Under the ROC Curve (AUC) for detection, Average Precision (AP), and Average Recall (AR) for temporal localization (calculated exclusively for fake samples).</li>
-                <center><img src="images/average_percision.png" style="width: 500px; height: auto;"></center>
-            </ul>
+            <p>We plan to host three competition tracks spanning AI-generated content and model-related tasks to attract broader research attention to AIGC safety challenges. These competitions will run concurrently with the workshop.</p>
+            
+            <h3>Track 1: Deepfake Detection, Localization, and Explainability</h3>
+            <p>Deepfake realism has spurred numerous detection competitions, but most emphasize image-level classification, overlooking spatial localization and interpretable trace analysis. The localization of manipulated regions improves the explainability of decisions, and the increasing number of multimodal forgeries increases the risk. We introduce the Deepfake Detection, Localization, and Explainability Challenge, supported by a large-scale multimodal deepfake description dataset (200K+ fake samples) that leverages Qwen3-VL to enrich the DDL-I corpus and advances spatial localization and explainability. More details about the competition can be found in our <b>Submission ID 9</b> to the Competitions Track of IJCAI-ECAI 2026, where we present a comprehensive proposal.</p>
+            <center><img src="images/f1_score.png" style="width: 500px; height: auto;"></center>
+            
+            <h3>Track 2: General AIGC Audio-Video Detection</h3>
+            <p>As audio-video generation becomes increasingly realistic, mitigating malicious misuse has become a key research priority. To raise awareness and accelerate defenses, we present a General AIGC Audio-Vision Detection Challenge, supported by a large-scale, high-quality multimodal dataset covering 25 generation techniques and three forgery modes to advance robust audio-visual detection. More details about the competition can be found in our <b>Submission ID 10</b> to the Competitions Track of IJCAI-ECAI 2026, where we present a comprehensive proposal.</p>
+            <center><img src="images/average_percision.png" style="width: 500px; height: auto;"></center>
+            
+            <h3>Track 3: Security Attacks and Defenses in Generative Foundation Models</h3>
+            <p>Large Generative Models (LGMs) deliver strong performance in perception and generation, but pose nontrivial security risks. With language prompts, LLMs and T2I models can yield harmful or policy-violating outputs; in MLLMs, vision-language interactions amplify threats, and evolving attacks continue to bypass defenses. Therefore, we present the Safety Attack-and-defense for Generative Large Models Challenge that aims to systematically reveal and evaluate safety vulnerabilities of LGMs across diverse attack scenarios. More details about the competition can be found in our <b>Submission ID 11</b> to the Competitions Track of IJCAI-ECAI 2026, where we present a comprehensive proposal.</p>
         </div>
     </div>
 <div class="card committee-section">
