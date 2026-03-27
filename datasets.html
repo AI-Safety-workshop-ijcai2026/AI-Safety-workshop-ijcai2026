@@ -15,12 +15,15 @@
             <a href="#">Challenge</a>
             <ul class="dropdown-menu">
                 <li><a href="challenge.html">Evaluate</a></li>
+                <li><a href="Track1.html">Track 1</a></li>
+                <li><a href="Track2.html">Track 2</a></li>
+                <li><a href="Track3.html">Track 3</a></li>
                 <li><a href="datasets.html">Datasets</a></li>
             </ul>
         </li>
         <li><a href="Registration.html">Registration</a></li>
         <li><a href="organizers.html">Organizers</a></li>
-<!--        <li class="active"><a href="accepted_paper.html">Accepted Papers</a></li>-->
+        <li><a href="2025ijcai.html">IJCAI 2025</a></li>
     </ul>
 </nav>
 
@@ -96,8 +99,7 @@
         </div>
         <!-- Image Data Section -->
         <section class="dataset-section">
-                <h3>Training Data Description</h3>
-            </div>
+            <h3>Training Data Description</h3>
             <p>In this task, we aim to detect deepfake images and localize deepfake areas with labels and masks access. The data consists of 1.2 million images, divided into three sub-datasets: "real", "fake", and "masks". The "real" sub-dataset contains genuine face images (label=0), while the "fake" sub-dataset holds artificially generated face images (label=1). Each image in the "fake" sub-dataset has a corresponding mask image located in the "masks" sub-dataset, which can be matched using the filename.</p>
         </section>
             <!-- 图片展示 -->
@@ -121,6 +123,7 @@
         </div>
                 <p> Our DDL-I surpasses others in terms of the diversity of forgery methods, the scale of
                     fake samples, and the complexity of forgery scenarios. Cla: Binary classification. <br>SL: Spatial forgery localization. Multi-Face: One or more faces in a multi-face image are manipulated.</p>
+            </div>
         </div>
     </section>
     <section class="dataset-docs">
@@ -169,6 +172,7 @@
                 <img src="images/Table2.png" style="max-width: 60%; height: auto;">
                 <p>Figure 2: Examples of the DDL-AV dataset. Green color represents real segments and red color represents fake content. Our innovation involves fabricating audio and video content at different time sequences.</p>
             </div>
+        </div>
     </section>
     <!-- Table 2 -->
     <div class="additional-content" style="margin-top: 2rem;" id="table2">
@@ -179,8 +183,8 @@
         <img src="images/Table2_2.png" alt="Table2" style="max-width: 60%; height: auto;">
     </div>
             <p style="text-align: center;">Cla: Binary classification, TL: Temporal localization, V: only video modality, A: only audio modality, AV: audio-video multiple modality.</p>
+        </div>
     </div>
-
 </main>
 <footer>
     <p>Contact: deepfake.ijcai2025@gmail.com</p>
