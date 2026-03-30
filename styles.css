@@ -1,12 +1,12 @@
 /* styles.css */
-/* 只影响Highlight区域内的列表链接 */
+/* 只影响 Highlight 区域内的列表链接 */
 .highlight-card ul li a {
     text-decoration: none;
 }
 :root {
-    --primary-color: #2c3e50;
+    --primary-color: #333333;
     --secondary-color: #3498db;
-    --background-color: #f9f9f9;
+    --background-color: #ffffff;
 }
 body {
     font-family: 'Segoe UI', sans-serif;
@@ -16,10 +16,11 @@ body {
 }
 
 nav {
-    background: var(--primary-color);
+    background: #ffffff;
     padding: 1rem;
     position: sticky;
     top: 0;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 nav ul {
@@ -31,14 +32,21 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: #000000;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
+    font-weight: 600;
 }
 
 nav a.active {
     background: var(--secondary-color);
+    color: white;
+}
+
+nav a:hover {
+    color: #0056b3;
+    background-color: #f8f9fa;
 }
 
 .container {
@@ -50,9 +58,8 @@ nav a.active {
 .hero {
     text-align: center;
     padding: 4rem 0;
-    background: linear-gradient(rgba(44,62,80,0.9), rgba(44,62,80,0.9)),
-                url('header-bg.jpg');
-    color: white;
+    background: #ffffff;
+    color: #333333;
 }
 
 .highlights {
@@ -71,8 +78,8 @@ nav a.active {
 
 .committee-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
 }
 
 .member-card {
@@ -98,15 +105,15 @@ nav a.active {
     position: absolute;
     left: -2.3rem;
     top: 0;
-    width: 1px;
+    width: 12px;
     height: 12px;
     background: var(--secondary-color);
     border-radius: 50%;
 }
 
 footer {
-    background: var(--primary-color);
-    color: white;
+    background: #ffffff;
+    color: #333333;
     text-align: center;
     padding: 1rem;
     margin-top: 3rem;
@@ -119,7 +126,7 @@ footer {
     }
 }
 
-/* 在styles.css中添加以下样式 */
+/* 在 styles.css 中添加以下样式 */
 .committee-section {
     margin: 3rem 0;
     padding: 2rem;
@@ -144,7 +151,6 @@ footer {
     padding: 1.5rem;
     transition: transform 0.3s ease;
     border: 1px solid #eee;
-    text-align: center;
 }
 
 .member-card:hover {
@@ -154,15 +160,6 @@ footer {
 
 .member-header {
     margin-bottom: 1rem;
-}
-
-.member-header h3 {
-    margin: 0.5rem 0;
-    font-size: 1.2rem;
-}
-
-.member-header .position {
-    margin: 0;
 }
 
 .position {
@@ -181,14 +178,6 @@ footer {
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    justify-content: flex-start;
-}
-
-.member-card .avatar img {
-    width: 100px;
-    height: 150px;
-    border-radius: 0;
-    object-fit: cover;
 }
 
 .profile-link {
@@ -197,8 +186,7 @@ footer {
     gap: 0.5rem;
     color: var(--secondary-color);
     text-decoration: none;
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
+    margin-top: 1rem;
 }
 
 .organizer-grid {
@@ -217,21 +205,14 @@ footer {
 
 .organizer-photo {
     width: 100px;
-    height: 150px;
-    border-radius: 0;
+    height: 100px;
+    border-radius: 50%;
     overflow: hidden;
 }
 
 .organizer-photo img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-
-.organizer-card .avatar img {
-    width: 100px;
-    height: 150px;
-    border-radius: 0;
     object-fit: cover;
 }
 
@@ -278,12 +259,12 @@ footer {
 
 /* Speaker Avatar */
 .speaker-card .avatar img {
-    width: 100px;
-    height: 150px;
-    border-radius: 0;
-    object-fit: cover;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* 圆形头像 */
+    object-fit: cover; /* 图片填充保持比例 */
+    margin-bottom: 15px; /* 图片与信息之间的间距 */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* 图像阴影 */
 }
 
 /* Speaker Info */
@@ -357,13 +338,12 @@ footer {
     .organizer-photo {
         width: 80px;
         height: 80px;
-        border-radius: 0;
     }
 }
 /* Add to styles.css */
 /* SCHEDULE SPECIFIC STYLES */
 .page-title {
-    color: #2c3e50;
+    color: #000000;
     border-bottom: 3px solid #3498db;
     padding-bottom: 1rem;
 }
@@ -380,7 +360,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 1rem;
-    color: #34495e;
+    color: #000000;
     margin-bottom: 2rem;
 }
 
@@ -442,8 +422,8 @@ footer {
 .table-header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    background: #3498db;
-    color: white;
+    background: #f8f9fa;
+    color: #000000;
     padding: 1rem;
     font-weight: bold;
 }
@@ -480,8 +460,8 @@ footer {
 }
 
 .date-badge {
-    background: #3498db;
-    color: white;
+    background: #f8f9fa;
+    color: #333333;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -509,7 +489,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-/* 添加以下CSS到styles.css */
+/* 添加以下 CSS 到 styles.css */
 
 /* Dataset Page Specific Styles */
 .dataset-header {
@@ -564,7 +544,7 @@ footer {
 .new-data-table {
     width: 100%;
     border-collapse: separate; /* 使用 separate 而非 collapse，这样可以使用 border-spacing 属性 */
-    border-spacing: 10px 5px; /* 设置列与列的间距 (水平间距, 垂直间距) */
+    border-spacing: 10px 5px; /* 设置列与列的间距 (水平间距，垂直间距) */
 }
 
 .new-data-table th, .new-data-table td {
@@ -666,8 +646,8 @@ footer {
 .competition-header {
     text-align: center;
     padding: 4rem 0;
-    background: var(--primary-color);
-    color: white;
+    background: #ffffff;
+    color: #333333;
     border-radius: 8px;
     margin-bottom: 2rem;
 }
@@ -812,14 +792,6 @@ footer {
         font-size: 1.8rem;
     }
 }
-/* 导航栏样式 */
-nav {
-    background: var(--primary-color); /* 使用自定义主色 */
-    padding: 1rem;
-    position: sticky; /* 粘性定位 */
-    top: 0;
-    z-index: 1000; /* 确保导航栏在其他内容上方 */
-}
 
 nav ul {
     list-style: none;
@@ -834,7 +806,7 @@ nav ul li {
 }
 
 nav a {
-    color: white; /* 链接字体颜色 */
+    color: #000000; /* 链接字体颜色 */
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -854,7 +826,7 @@ nav ul li .dropdown-menu {
     min-width: 80px; /* 设置最小宽度 */
     z-index: 1000; /* 确保下拉菜单在其他内容上方 */
     border-radius: 8px; /* 圆角边 */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* 陰影效果 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* 阴影效果 */
     padding: 10px 0; /* 上下内边距 */
 }
 
@@ -869,7 +841,7 @@ nav ul li .dropdown-menu li {
 }
 
 nav ul li .dropdown-menu li a {
-    padding: 12px 16px; /* 调整下拉菜单项的内邊距 */
+    padding: 12px 16px; /* 调整下拉菜单项的内边距 */
     color: black; /* 下拉菜单项字体颜色 */
     font-size: 0.9rem; /* 子菜单字体大小，稍小于父链接 */
     transition: background 0.15s; /* 背景颜色变化效果 */
@@ -878,6 +850,13 @@ nav ul li .dropdown-menu li a {
 nav ul li .dropdown-menu li a:hover {
     background-color: var(--secondary-color); /* 鼠标悬停下拉菜单项的背景颜色 */
     color: white; /* 悬停时字体颜色 */
+}
+
+/* 页面内容样式 */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto; /* 中间对齐 */
+    padding: 0 1rem; /* 水平内边距 */
 }
 
 .page-content {
@@ -892,13 +871,158 @@ footer {
     margin-top: 3rem;
 }
 
+
+/* 页面内容样式 */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto; /* 中间对齐 */
+    padding: 0 1rem; /* 水平内边距 */
+}
+
+.page-content {
+    margin-top: 20px;
+}
+
+footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+ /* 通用设置 */
+ .container {
+     max-width: 1200px;
+     margin: auto;
+     padding: 20px;
+ }
+
+ .committee-section {
+     margin-bottom: 40px;
+ }
+
+ .section-header {
+     font-size: 24px;
+     color: #333;
+     margin-bottom: 20px;
+ }
+
 /* Organizer Grid */
 .organizer-grid, .expert-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 响应式布局 */
+    gap: 20px;
 }
 
+/* Organizer Card */
+.organizer-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    padding: 20px;
+    text-align: center; /* 内容居中对齐 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+/* Card Hover Effect */
+.organizer-card:hover {
+    transform: scale(1.03); /* 鼠标悬停时稍微放大 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Avatar */
+.avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover; /* 保证图片适配圆形头像 */
+    margin-bottom: 15px; /* 图片与姓名/信息间距 */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Organizer Info */
+.organizer-info {
+    text-align: center; /* 信息居中 */
+}
+
+.organizer-info h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.organizer-info p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.organizer-info .research-area {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Details List */
+.details-list {
+    list-style: none; /* 去掉默认的列表样式 */
+    padding: 0;
+    margin: 10px 0;
+}
+
+.details-list li {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.details-list i {
+    margin-right: 8px; /* 图标与文字间距 */
+    color: #007bfc; /* 图标颜色 */
+}
+
+/* Profile Link */
+.profile-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #007bfc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profile-link i {
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+/* Hover Effect */
+.profile-link:hover {
+    text-decoration: underline;
+}
+
+.profile-link:hover i {
+    transform: translateX(3px); /* 向右移动图标 */
+}
+
+ /* 通用设置 */
+ .container {
+     max-width: 1200px;
+     margin: auto;
+     padding: 20px;
+ }
+
+ .committee-section {
+     margin-bottom: 40px;
+ }
+
+ .section-header {
+     font-size: 24px;
+     color: #333;
+     margin-bottom: 20px;
+ }
 /* Acknowledgments Section Styling */
 .acknowledgments-grid {
     display: grid;
@@ -918,6 +1042,14 @@ footer {
     font-size: 16px;
     color: #333;
     transition: transform 0.3s, box-shadow 0.3s;
+}
+/* 卡片样式 */
+.highlight-card {
+    background: white;
+    padding: 2rem; /* 内边距 */
+    border-radius: 8px; /* 圆角 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 阴影 */
+    margin-bottom: 2rem; /* 底部间距 */
 }
 
 /* 标题样式 */
@@ -941,8 +1073,3 @@ footer {
 .related-topics ul li ul {
     padding-left: 20px; /* 嵌套列表的左侧内边距 */
 }
-
-
-
-
-
